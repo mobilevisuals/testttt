@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<title>Pizza price calculated</title>
+</h:head> 
+<body> 
+	<b>#{pizzaCalculator.name}</b> has chosen:
+	<br/><br/>
+	<b>thickness:</b> #{pizzaCalculator.thickness}
+	<br/>
+	<b>toppings:</b>
+	<br/>
+	<ul>
+		<ui:repeat value="#{pizzaCalculator.toppings}" var="topping">
+			<li>#{topping}</li>
+		</ui:repeat>
+	</ul>
+	<b>size:</b> #{pizzaCalculator.size}
+	<br/>
+	<b>delivery method:</b> #{pizzaCalculator.deliveryMethod}
+	<br/>
+	Your pizza will cost <b>#{pizzaCalculator.price}</b> SEK.
+	<br/><br/>
+</body> 
+</html>

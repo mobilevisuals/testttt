@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"> 
+
+<h:head>
+	<title>Exercise 3 - Pizza calculator</title>
+</h:head> 
+<body>
+	<h:form>
+	
+		Pie thickness: 
+		<h:selectOneMenu value="#{pizzaCalculator.thickness}">
+			<f:selectItems value="#{pizzaCalculator.thicknessOptions}" />
+		</h:selectOneMenu>
+		<br/><br/>
+		
+		Toppings: 
+		<h:selectManyCheckbox value="#{pizzaCalculator.toppings}" layout="pageDirection">
+			<f:selectItems value="#{pizzaCalculator.toppingOptions}" />
+		</h:selectManyCheckbox>
+		<br/><br/>
+		
+		Size: 
+		<h:selectOneRadio value="#{pizzaCalculator.size}" layout="pageDirection">
+			<f:selectItems value="#{pizzaCalculator.sizeOptions}" />
+		</h:selectOneRadio>
+		<br/><br/>
+		
+		Delivery method: 
+		<h:selectOneRadio value="#{pizzaCalculator.deliveryMethod}" layout="pageDirection">
+			<f:selectItems value="#{pizzaCalculator.deliveryMethodOptions}" />
+		</h:selectOneRadio>
+		<br/>
+		
+		Your name: 
+		<h:inputText value="#{pizzaCalculator.name}" />
+		<br/><br/>
+		
+		Your phone number: 
+		<h:inputText value="#{pizzaCalculator.phoneNumber}" />
+		<br/><br/>
+		
+		<h:commandButton action="output-3" value="Calculate price" />
+	</h:form>
+</body> 
+</html>
