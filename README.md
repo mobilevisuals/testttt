@@ -1,20 +1,20 @@
 # JSF-Exercises
-<h3>Exercises to practice Java Server Faces</h2>
+### Exercises to practice Java Server Faces
 
-<h4><em>Exercise 1</em></h4>
+#### <em>Exercise 1</em>
 
 Create a project with input.xhtml, output.xhtml and a Managed Bean.
 The input file should be a form with 2-3 different kinds of inputs (your choice!) and a button.
 When the user click the button, the input data is displayed in the output file.
 Use a Managed Bean for managing the transmitted data.
 
-<h4><em>Exercise 2</em></h4>
+#### <em>Exercise 2</em>
 
 We still need a input.xhtml and output.xhtml.
 The input file is a form with two fields for entering two numbers.
 The bean should store the two numbers, sum them up and then display the result in the output file.
 
-<h4><em>Exercise 3</em></h4>
+#### <em>Exercise 3</em>
 
 Create a project that has PizzaCalculatorJSF input.xhtml, output.xhtml and a Managed Bean class. The input form should include:
 <ul>
